@@ -1,6 +1,7 @@
 const express = require('express');
 
 const app = express();
+const port = 3000
 
 const routes = require('./routes/');
 const errorHandler = require('./middlewares/error-handler');
@@ -11,5 +12,6 @@ app.get(express.json());
 app.use(errorHandler);
 app.use('/', routes);
 
+app.listen(port, ()=>console.log(`listening pn port ${port}`))
 
 module.exports = app;
