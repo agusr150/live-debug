@@ -60,9 +60,9 @@ export default {
     }
   },
   computed: {
-    countriesLoading () {
-      return this.$store.state.countriesLoading
-    },
+    // countriesLoading () {
+    //   return this.$store.state.countriesLoading
+    // },
     countries () {
       this.$store.state.countries
     },

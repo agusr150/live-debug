@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router;
 
-const booksRoutes = require('../controllers/book');
+//const booksRoutes = require('./books');
 //const membersRoutes = require('./members');
-//const loansRoutes = require('./loans');
+const loansRoutes = require('./loans');
 
-router.use('/', booksRoutes);
+//router.use('/', booksRoutes);
 //router.use('/members', membersRoutes);
-//router.use('/loans', loansRoutes);
+router.use('/loans', loansRoutes);
 
 module.exports = router;
